@@ -25,7 +25,7 @@
             :id="hit.hash"
           >
             <v-img
-              :src="`https://gateway.ipfs.io/ipfs/${hit.hash}`"
+              :src="getResourceURL(hit.hash)"
               aspect-ratio="1"
               class="grey lighten-2"
             >
@@ -60,7 +60,7 @@ export default {
     return {
       fileType: 'images',
       shortList: 6,
-      infinite: true,
+      // infinite: true,
     };
   },
 };

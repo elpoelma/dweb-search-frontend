@@ -26,7 +26,7 @@
                   class="mr-n3 grey--text d-flex align-center"
                   v-on="on"
                 >
-                  <span>{{ type }}</span>
+                  <span class="text-capitalize">{{ type }}</span>
                   <v-icon
                     class="d-inline-block"
                   >
@@ -40,7 +40,9 @@
                   :key="t"
                   @click="type=t"
                 >
-                  <v-list-item-title>
+                  <v-list-item-title
+                    class="text-capitalize"
+                  >
                     <!-- TODO: capitalize first character -->
                     {{ t }}
                   </v-list-item-title>
@@ -104,11 +106,11 @@ export default {
     },
   },
   watch: {
-    '$route.query': () => {
+    '$route.query': (routeQuery) => {
       console.debug(
-        'SearchBar watch route.query: committing route query to store', this.$route.query,
+        'SearchBar watch route.query: committing route query to store', routeQuery,
       );
-      store.commit('query/setRouteParams', this.$route.query);
+      store.commit('query/setRouteParams', routeQuery);
     },
   },
 };
