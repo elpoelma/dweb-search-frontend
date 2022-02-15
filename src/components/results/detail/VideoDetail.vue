@@ -84,5 +84,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~video.js/dist/video-js.css';
+@import '~/video.js/dist/video-js.css';
 </style>
