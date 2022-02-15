@@ -15,7 +15,7 @@
       <i>Loading preview</i>
       <v-progress-linear
         :indeterminate="!progress"
-        :value="progress"
+        :model-value="progress"
       />
     </v-alert>
     <iframe

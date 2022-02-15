@@ -1,11 +1,8 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import { createStore } from 'vuex';
 import SearchQuery from './modules/SearchQuery';
 import SearchResults from './modules/SearchResults';
 
-Vue.use(Vuex);
-
-export default new Vuex.Store({
+export default createStore({
   modules: {
     // TOOD: Use central helper listing types, create store
     // for each dynimcally.
