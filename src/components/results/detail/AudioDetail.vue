@@ -104,9 +104,9 @@
 </template>
 
 <script>
-import MediaHeader from '@/components/results/detail/helpers/MediaHeader';
-import MetaDataPanel from '@/components/results/detail/helpers/MetaDataPanel';
-import AudioDetailButton from '@/components/helpers/AudioDetailButton';
+import MediaHeader from '@/components/results/detail/helpers/MediaHeader.vue';
+import MetaDataPanel from '@/components/results/detail/helpers/MetaDataPanel.vue';
+import AudioDetailButton from '@/components/helpers/AudioDetailButton.vue';
 import AudioControlsMixin from '@/mixins/AudioControlsMixin';
 import DetailMixin from '@/components/results/detail/mixins/DetailMixin';
 

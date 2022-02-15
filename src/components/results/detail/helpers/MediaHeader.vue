@@ -38,9 +38,9 @@
 
 <script>
 import mime from 'mime';
-import DownloadButton from '@/components/helpers/DownloadButton';
+import DownloadButton from '@/components/helpers/DownloadButton.vue';
 import DetailMixin from '@/components/results/detail/mixins/DetailMixin';
-import CopyHashButton from '@/components/helpers/CopyHashButton';
+import CopyHashButton from '@/components/helpers/CopyHashButton.vue';
 
 export default {
   mixins: [

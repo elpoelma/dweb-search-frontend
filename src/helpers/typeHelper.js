@@ -1,8 +1,8 @@
-import DocumentDetail from '@/components/results/detail/DocumentDetail';
-import ImageDetail from '@/components/results/detail/ImageDetail';
-import VideoDetail from '@/components/results/detail/VideoDetail';
-import AudioDetail from '@/components/results/detail/AudioDetail';
-import DirectoryDetail from '@/components/results/detail/DirectoryDetail';
+import DocumentDetail from '@/components/results/detail/DocumentDetail.vue';
+import ImageDetail from '@/components/results/detail/ImageDetail.vue';
+import VideoDetail from '@/components/results/detail/VideoDetail.vue';
+import AudioDetail from '@/components/results/detail/AudioDetail.vue';
+import DirectoryDetail from '@/components/results/detail/DirectoryDetail.vue';
 
 export const fileTypes = [
   'text',

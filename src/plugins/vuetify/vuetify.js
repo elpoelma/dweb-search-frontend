@@ -1,10 +1,8 @@
 import Vue from 'vue';
-
-// Faster builds
-// Ref: https://vuetifyjs.com/en/features/presets/#compilation-time
-import Vuetify from 'vuetify/lib/framework';
-
+import { createVuetify } from 'vuetify';
 import ipfsTheme from './theme';
+
+const Vuetify = createVuetify();
 
 Vue.use(Vuetify);
 

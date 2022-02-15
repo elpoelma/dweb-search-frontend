@@ -10,7 +10,6 @@ module.exports = {
     '@vue/airbnb',
   ],
   parserOptions: {
-    parser: '@babel/eslint-parser',
   },
   settings: {
     'import/resolver': {
@@ -18,7 +17,7 @@ module.exports = {
         map: [
           ['@', './src'],
         ],
-        extensions: ['.ts', '.js', '.jsx', '.json', '.vue'],
+        extensions: ['.ts', '.js', '.jsx', '.json'],
       },
     },
   },
