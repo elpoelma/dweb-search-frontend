@@ -5,14 +5,14 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    loader: Home,
   },
   {
     path: '/search',
     name: 'Search',
     props: (route) => ({ query: route.query }),
     // route level code-splitting
-    component: () => import('../views/Search.vue'),
+    loader: () => defineAsyncComponent('../views/Search.vue'),
   },
   {
     path: '/search/detail/:fileType/:fileHash',
@@ -22,7 +22,7 @@ const routes = [
       query: route.query,
     }),
     // route level code-splitting
-    component: () => import('../views/Detail.vue'),
+    loader: () => defineAsyncComponent('../views/Detail.vue'),
   },
 ];
 

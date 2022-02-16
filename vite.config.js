@@ -1,10 +1,17 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { defineConfig } from 'vite';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import vue from '@vitejs/plugin-vue';
 import path from 'path';
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue({
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => tag.startsWith('v-'),
+      },
+    },
+  })],
   server: {
     port: 8080,
   },
