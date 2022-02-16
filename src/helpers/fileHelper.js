@@ -1,4 +1,4 @@
-const mime = require('mime/lite');
+import mime from 'mime/lite'
 
 // Howler (audio player) requires the following extensions:
 // "mp3", "mpeg", "opus", "ogg", "oga", "wav", "aac", "caf", "m4a", "m4b",
