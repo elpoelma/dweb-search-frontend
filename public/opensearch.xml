@@ -3,4 +3,5 @@
   <Description>IPFS Search</Description>
   <InputEncoding>[UTF-8]</InputEncoding>
   <Url type="text/html" template="http://localhost:8080/#/search?q={searchTerms}"/>
+  <Url type="application/json" rel="suggestions" template="http://localhost:9000/suggestions?q={searchTerms}"/>
 </OpenSearchDescription>
